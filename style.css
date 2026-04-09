@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+}
+
+/* header section */
+
+#header-section {
+  height: 400px;
+  margin: 0px;
+  background-image: url("images/Chattogram.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-title {
+  background: #457b9d;
+  color: white;
+  margin: 0;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+#page-intro {
+  text-align: center;
+  background: #1d3557;
+  color: white;
+  padding: 5px 12px;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+}
+
+/* activity section */
+
+#activity-section {
+  background: #f1faee;
+  height: 400px;
+  text-align: center;
+}
+
+#activity-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.div-width {
+  width: 200px;
+}
+
+/* guide section */
+
+#guide-card {
+  margin: 30px auto;
+  background: #a8dadc;
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+  height: 200px;
+  padding: 10px;
+  border-bottom: #457b9d 6px solid;
+}
+
+#guide-image {
+  width: 150px;
+}
+
+#guide-description {
+  text-align: center;
+}
+
+.paragraph-width {
+  width:200px;
+}
