@@ -19,7 +19,7 @@ h3 {
 /* header section */
 
 #header-section {
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
   margin: 0px;
   background-image: url("images/Chattogram.jpg");
@@ -54,7 +54,7 @@ h3 {
 #activity-section {
   color: #1d3557;
   background: #f1faee;
-  height: 45vh;
+  min-height: 45vh;
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -125,7 +125,7 @@ h3 {
   }
 
   #activity-section {
-    height: 50vh;
+    min-height: 35vh;
   }
 
   #guide-info {
@@ -144,5 +144,9 @@ h3 {
   .activities-img {
     width: 70px;
     height: 70px;
+  }
+
+  #activity-info {
+    font-size: 10px;
   }
 }
