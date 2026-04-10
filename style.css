@@ -8,10 +8,19 @@ body {
   display: none; /* Chrome */
 }
 
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 /* header section */
 
 #header-section {
   height: 60vh;
+  width: 100%;
   margin: 0px;
   background-image: url("images/Chattogram.jpg");
   background-size: cover;
@@ -48,6 +57,7 @@ body {
   height: 45vh;
   text-align: center;
   padding: 10px;
+  width: 100%;
 }
 
 .activities-img {
@@ -58,39 +68,48 @@ body {
 
 #activity-info {
   display: flex;
+  flex: 1;
   justify-content: space-around;
   gap: 40px;
+  /* flex-wrap: wrap; */
 }
 
 .activity-width {
   flex: 1;
   max-width: 250px;
+  height: 50px;
 }
 
 /* guide section */
+
+#guide-section {
+  width: 100%;
+}
 
 #guide-card {
   margin: 50px auto;
   background: #a8dadc;
   color: #1d3557;
   display: flex;
+  align-items: center;
+  gap: 15px;
   justify-content: space-around;
-  width: 450px;
-  height: 200px;
+  max-width: 450px;
+  max-height: 200px;
   padding: 10px;
   border-bottom: #457b9d 6px solid;
   border-radius: 5px;
 }
 
 #guide-image {
-  width: 150px;
+  max-width: 150px;
   border: solid;
   border-radius: 5px;
 }
 
 #guide-info {
   text-align: center;
-  width: 250px;
+  max-width: 250px;
 }
 
 #guide-description {
@@ -106,6 +125,24 @@ body {
   }
 
   #activity-section {
-    height: 40vh;
+    height: 50vh;
+  }
+
+  #guide-info {
+    font-size: 10px;
+  }
+
+  #guide-image {
+    max-width: 100px;
+  }
+
+  #guide-card {
+    max-width: 350px;
+    max-height: 150px;
+  }
+
+  .activities-img {
+    width: 70px;
+    height: 70px;
   }
 }
