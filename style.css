@@ -141,6 +141,10 @@ body {
     /* border: 5px solid #1d3557; */
   }
 
+  #guide-card {
+    gap: 5px;
+  }
+
   #guide-info {
     font-size: 15px;
   }
@@ -150,8 +154,24 @@ body {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
+  #guide-info {
+    font-size: 12px;
+  }
+
+   #guide-image {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 300px) {
   #guide-card {
     flex-direction: column;
+  }
+  #guide-info {
+    font-size: 15px;
+  }
+     #guide-image {
+    max-width: 150px;
   }
 }
