@@ -54,7 +54,7 @@ h3 {
 #activity-section {
   color: #1d3557;
   background: #f1faee;
-  min-height: 45vh;
+  min-height: 430px;
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -71,14 +71,12 @@ h3 {
   flex: 1;
   justify-content: space-around;
   gap: 10px;
-
   /* flex-wrap: wrap; */
 }
 
 .activity-width {
   flex: 1;
   max-width: 250px;
-  height: 50px;
 }
 
 /* guide section */
@@ -122,11 +120,11 @@ h3 {
 
 @media (max-width: 600px) {
   #header-section {
-    height: 50vh;
+    min-height: 50vh;
   }
 
   #activity-section {
-    min-height: 35vh;
+    min-height: 300px;
   }
 
   #guide-info {
