@@ -8,23 +8,16 @@ body {
   display: none; /* Chrome */
 }
 
-p,
-h1,
-h2,
-h3 {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
 /* header section */
 
 #header-section {
+  box-sizing: border-box;
   min-height: 60vh;
   width: 100%;
   margin: 0px;
   background-image: url("images/Chattogram.jpg");
   background-size: cover;
-  background-position: 70% center;
+  background-position: top;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -38,6 +31,7 @@ h3 {
   margin: 0;
   padding: 5px 12px;
   border-radius: 8px;
+  text-shadow: 0 0 5px black;
 }
 
 #page-intro {
@@ -47,11 +41,13 @@ h3 {
   padding: 5px 12px;
   margin: 10px 0 0 0;
   border-radius: 8px;
+  text-shadow: 0 0 5px black;
 }
 
 /* activity section */
 
 #activity-section {
+  box-sizing: border-box;
   color: #1d3557;
   background: #f1faee;
   min-height: 430px;
@@ -63,6 +59,7 @@ h3 {
 .activities-img {
   width: 150px;
   height: 150px;
+  padding: 0;
   border-radius: 50%;
 }
 
@@ -70,19 +67,21 @@ h3 {
   display: flex;
   flex: 1;
   justify-content: space-around;
-  gap: 10px;
+  align-items: top;
+  gap: 20px;
   /* flex-wrap: wrap; */
 }
 
 .activity-width {
   flex: 1;
-  max-width: 250px;
 }
 
 /* guide section */
 
 #guide-section {
+  box-sizing: border-box;
   width: 100%;
+  padding: 0 15px;
 }
 
 #guide-card {
@@ -94,7 +93,7 @@ h3 {
   gap: 15px;
   justify-content: space-around;
   max-width: 450px;
-  max-height: 200px;
+  height: auto;
   padding: 10px;
   border-bottom: #457b9d 6px solid;
   border-radius: 5px;
@@ -127,25 +126,32 @@ h3 {
     min-height: 300px;
   }
 
-  #guide-info {
-    font-size: 10px;
-  }
-
-  #guide-image {
-    max-width: 100px;
-  }
-
-  #guide-card {
-    max-width: 350px;
-    max-height: 150px;
+  #activity-info {
+    box-sizing: border-box;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .activities-img {
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    /* border: 5px solid #1d3557; */
   }
 
-  #activity-info {
-    font-size: 10px;
+  #guide-info {
+    font-size: 15px;
+  }
+
+  #guide-image {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 360px) {
+  #guide-card {
+    flex-direction: column;
   }
 }
